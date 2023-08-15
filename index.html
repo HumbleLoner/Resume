@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <!--Tailwind imports-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[fade-in-down_1s_ease-in-out]'],
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inconsolata&display=swap" rel="stylesheet">
+</head>
+
+<body class="pt-40 sm:pr-8 sm:pl-8 lg:pr-40 lg:pl-40">
+    <header class="fixed w-full z-20 top-0 left-0">
+        <nav class="bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <a href="#"><img src="./logo.png" alt="" class="h-14 w-18 px-3"></a>
+
+                    </div>
+                    <div class="hidden md:flex space-x-1 px-3">
+                        <div><a href="#" class="py-2 px-3 hover:bg-gray-300 rounded transition duration-300">Home</a>
+                        </div>
+                        <div><a href="#profile"
+                                class="py-2 px-3 hover:bg-gray-300 rounded transition duration-300">Profile</a>
+                        </div>
+                        <div><a href="#skill"
+                                class="py-2 px-3 hover:bg-gray-300 rounded transition duration-300">Skills</a>
+                        </div>
+                        <div><a href="#contact" class="py-2 px-3 hover:bg-gray-300 rounded transition duration-300">Contact</a>
+                        </div>
+                    </div>
+                    <div class="md:hidden flex items-center px-3">
+                        <button class="mobile-menu-button">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu hidden">
+                <a href="#" class="text-center block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+                <a href="#" class="text-center block py-2 px-4 text-sm hover:bg-gray-100">Profile</a>
+                <a href="#" class="text-center block py-2 px-4 text-sm hover:bg-gray-100">Skills</a>
+                <a href="#" class="text-center block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="flex">
+            <div class="w-11/12">
+                <img class="rounded-full w-11/12" src="./mypis.jpg" alt="">
+            </div>
+            <div class="w-full pt-20">
+                <h1 class="font-[Caprasimo] text-6xl mb-4 text-gray-900 animate__animated animate__fadeInRight">Transforming Ideas Into Functional Websites.
+                </h1>
+                <p class="font-[Inconsolata] text-3xl mb-4 uppercase">"Who am I? What Do I do?"</p>
+                <a href="#profile">
+                    <button type="button"
+                        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
+                        ABOUT ME
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="mt-40">
+            <h1 class="font-[Caprasimo] text-6xl mb-2 text-gray-900 text-center pt-20 animate__animated animate__fadeIn">Hi There! My Name Is Meg Ryan
+                Pogado,
+                Web Developer</h1>
+            <div class="flex mt-14">
+                <div class="w-full mr-14">
+                    <p class="text-3xl font-extrabold underline mb-4">ABOUT ME</p>
+                    <p class="text-xl mb-4 animate__animated animate__fadeInLeft animate__delay-2s">I'm passionate about creating dynamic, user friendly web application that
+                        helps the business and individuals achieve thier goals. As a Web Developer, I have experience
+                        working with front-end technologies and always eager to learn new things.</p>
+                    <p class="text-xl mb-4 animate__animated animate__fadeInLeft animate__delay-3s"> I am a goal-oriented person. I like to plan before taking action to
+                        complete the tasks while staying focused on the required results. </p>
+                    <p class="text-xl mb-4 animate__animated animate__fadeInLeft animate__delay-4s">Seeking a challenging career to make use of my interpersonal skills to
+                        achieve the goals of the company that meets on customer contentment and experience.</p>
+                    <p class="text-xl mb-4 animate__animated animate__fadeInLeft animate__delay-5s">Pursuing for a job in a healthy and cooperative workplace where my skills
+                        and knowledge are applied efficiently for an organizational growth.</p>
+                </div>
+                <div class="">
+                    <img class="h-min transition-all duration-300 rounded-lg blur-sm hover:blur-none" src="./about.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="mt-40 mb-4">
+            <h1 class="font-[Caprasimo] text-6xl mb-2 text-gray-900 text-center pt-20  animate__animated animate__fadeIn">Abilities To Make Your Ideas To
+                Reality
+            </h1>
+            <p class="text-3xl font-extrabold underline mt-14 mb-4 text-center">SKILLS</p>
+        </div>
+        <div class="grid gap-4 grid-cols-3">
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-64 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./C.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./C sharp.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./C++.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-40 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./html.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./java.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./asp.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-12 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./dart.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-12 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./tailwind.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+            <a href="#"
+                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-40 md:w-48 md:rounded-none md:rounded-l-lg"
+                    src="./javascript.png" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="text-3xl font-extrabold underline mb-4 text-center">CONTACT US</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-900 sm:text-xl">You can contact me by sending and email</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Want You want to know about me" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="button"
+                    class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+<script>
+    const btn = document.querySelector('button.mobile-menu-button')
+    const menu = document.querySelector('.mobile-menu')
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden")
+    })
+</script>
+
+</html>
